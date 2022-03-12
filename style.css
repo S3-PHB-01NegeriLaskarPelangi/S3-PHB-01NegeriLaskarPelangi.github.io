@@ -409,7 +409,10 @@ background: inherit;
 			width: 0;
 			overflow: hidden;
 			transition: width 10s;			
-		    color: #fff;
+		     background: linear-gradient(to right, #EC0F47,
+                    #EE6B3B, #FBBF54, #15C286,#0F49B4,#8A2BE2,#6F00FF);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
 		}
 
 		.pertama a:hover::before{
@@ -495,7 +498,8 @@ background: inherit;
 	text-indent: 25px;
 	top: 95px;
 	font-size: 130px;
-	animation: angkato 5s alternate infinite;
+	animation: angkawarna 5s alternate-reverse infinite;
+	
 	
 }
 
@@ -559,9 +563,9 @@ background: inherit;
 } .bbvideo:hover{
 	transform: rotate(5deg);
 }
-}
 
-@keyframes angkato{
+
+@keyframes angkawarna{
 	0%{
 		color: #E56839;
 	}
@@ -576,10 +580,7 @@ background: inherit;
 	}
 	100%{
 		color: #8A2BE2;
-	}
-	
-
-}
+	} }
 
 
 
@@ -615,7 +616,307 @@ background: inherit;
 		transform: rotate3d(0,0,1,0deg);
 	}
 }
+
+.anggota{
+	position: absolute;
+	margin-left: 1120px;
+	margin-top: 115px;
+	padding: 30px;
+	box-sizing: border-box;
+	width: 180px;
+	height: 180px;
+	background-color: #FF2B47;
+	border-radius: 100%;
+	overflow: hidden;
+	z-index: 4;
+	box-shadow: 0 0 1rem 0px rgba(0, 0, 0, .5);
+	transition: transform 1s;
+
+
+
 }
+.anggota::before{
+	position: absolute;
+	margin-top: 250px;
+	padding: 30px;
+	box-sizing: border-box;
+	width: 275px;
+	height: 275px;
+	background-color: #15C286;
+	border-radius: 100%;
+	overflow: auto;
+	box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, .2);
+	backdrop-filter: blur(150px)saturate(100%) contrast(45%) brightness(130%);
+
+
+
+}
+
+.anggota a {
+	font-size: 75px	;
+	text-align: center;
+	text-decoration: none;
+	line-height: 125px;
+	margin-right: 12px;
+	margin-bottom: 12px;
+	font-family: "Metropolis-Black";
+	color: #FFE932;
+}
+
+.anggota:hover{
+	background-color: inherit;
+}
+
+#magic:active{
+	background-color: #44B54F;
+}
+
+/*bang*/
+.bang{
+	width: 900px;
+	height: 650px;
+	border-radius: 50px;
+	background-color: white;
+	text-align: center;
+	font-family: "Metropolis-Black";
+	font-size: 35px;
+	line-height: 110px;
+	
+	
+}
+
+
+
+/*overlay*/
+
+.overlay{
+	width: 0;
+	height: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0);
+	z-index: 9999;
+	transition: .8s;
+}
+
+.overlay:target{
+	width: auto;
+	height: auto;
+	bottom: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.8);
+}
+
+.overlay .bang{
+	max-height: 100%;
+}
+
+.overlay:target .bang{
+	animation: zfade 1s;
+}
+
+
+
+
+
+/* close */
+.overlay .close{
+	font-size: 50px	;
+	font-family: "Metropolis-Black";
+	text-decoration: none;
+	color: black;
+	position: absolute;
+	top: 15%;
+	right: 20%;
+	transition: 1s;
+	opacity: 0;
+}
+
+.overlay:target .close{
+	animation: flydown 1s 1s forwards;
+}
+
+.overlay .close:hover{
+	transform: scale(1.5) skew(-15deg) rotate(5deg) spin(360deg);
+	animation: spin 1s ;
+	opacity: 1;
+}
+
+
+.wong1{
+	position: absolute;
+	top: 27%; right: 50%;
+  transform: translate(50%,-50%);
+	width: 	350px;
+	height: 	85px;
+	background-color: white;
+	border-radius: 70px;
+	box-shadow: 0 0 1rem 0px rgba(0, 0, 0, .5); ;
+	transition: ease-out .3s;
+	z-index: 1;
+
+}
+
+.wong1:hover{
+	background-color: #EC0F47;
+	top: 25%;
+}
+
+.wong2{
+	position: absolute;
+	top: 47%; right: 50%;
+  transform: translate(50%,-50%);
+	width: 	350px;
+	height: 	85px;
+	background-color: white;
+	border-radius: 70px;
+	box-shadow: 0 0 1rem 0px rgba(0, 0, 0, .5); ;
+	transition: ease-out .3s;
+	z-index: 1;
+}
+.wong2:hover{
+	background-color: #FBBF54;
+	top: 45%;
+}
+
+.wong3{
+	position: absolute;
+	top: 67%; right: 50%;
+  transform: translate(50%,-50%);
+	width: 	350px;
+	height: 	85px;
+	background-color: white;
+	border-radius: 70px;
+	box-shadow: 0 0 1rem 0px rgba(0, 0, 0, .5); ;
+	transition: ease-out .3s;
+	z-index: 1;
+}
+
+.wong3:hover{
+	background-color: #15C286;
+	top: 65%;
+}
+
+.wong4{
+	position: absolute;
+	top: 87%; right: 50%;
+  transform: translate(50%,-50%);
+	width: 	350px;
+	height: 	85px;
+	background-color: white;
+	border-radius: 70px;
+	box-shadow: 0 0 1rem 0px rgba(0, 0, 0, .5); ;
+	transition: ease-out .3s;
+	z-index: 1;
+}
+
+.wong4:hover{
+	background-color: royalblue;
+	top: 85%;
+}
+
+#tengah h1{
+	line-height: 50px	;
+	color: white;
+	text-shadow: 1px 1px 9px rgba(0, 0, 0, .3);
+	text-align: center;
+}
+
+
+.muter{
+	position: absolute;
+	width: 	200px;
+	height: 	200px;
+	background-color: white;
+	border-radius: 50%;
+	transition: 1s;
+	animation: left-to-right 10s ease-in alternate infinite;
+	z-index: 0;
+}
+
+.muter2{
+	position: absolute;
+	width: 	200px;
+	height: 	200px;
+	background-color: white;
+	border-radius: 50%;
+	transition: 1s;
+	animation: left-to-right 7s ease-in alternate infinite;
+	z-index: 0;
+}
+
+	@keyframes left-to-right{
+	0%{
+		transform: translateX(-100%);
+	}
+	25%{
+		transform: translateY(250%);
+		background-color: royalblue;
+	}
+	50%{
+		transform: translateX(100%);
+		background-color: #15C286;
+	}
+	75%{
+		transform: translate(250%, 250%);
+		background-color: #FBBF54;
+	}
+	100%{
+		transform: translate(250%,-150%) translateX(250%);
+		background-color: #EC0F47;
+	}
+}
+
+
+
+
+
+/* anime  */
+
+@keyframes zfade{
+	0%{
+		transform: scale(0);
+		opacity: 0;
+	}100%{
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes flydown{
+	0%{
+		opacity: 0;
+		transform: scale(0);
+	}100%{
+		opacity: 1;
+		transform: scale(1.2);
+	}
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg) scale(1.5);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
