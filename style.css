@@ -4,6 +4,7 @@ body{
 	animation: gradient 15s ease infinite;
 	height: 150vh;
 	 -webkit-user-select: none;
+	 animation: transiTion 2s;
 
 
 
@@ -884,7 +885,16 @@ background: inherit;
 }
 
 
-
+.footer{
+	position: absolute;
+	margin-top: 1300px;
+	width: 1335px;
+	height: 55px;
+	text-align: center;
+	color: white;
+	font-family: Metropolis-Black;
+	
+}
 
 
 /* anime  */
@@ -916,6 +926,16 @@ background: inherit;
     to {
         transform:rotate(360deg) scale(1.5);
     }
+}
+
+@keyframes transiTion{
+	from{
+		opacity: 0;
+		transform: translateY(-10px);
+	}to{
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
 

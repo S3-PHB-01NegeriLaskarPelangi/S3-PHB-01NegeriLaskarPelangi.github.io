@@ -1,19 +1,21 @@
 var lagi = true
-
-   
+var alerted = localStorage.getItem('alerted') || '';
+    if (alerted != 'b') {
 
      while (lagi === true) {
-  var nama = prompt('Tak kenal maka tak sayang\n(Isi nama kamu terlebih dahulu)');
+  var nama = prompt('Dak kenal maka Dak nek kek\n(Along isi nama ka terlebih dahulu)');
   alert('Halo ' +nama +' salam kenal🖐️');
-  alert('Setelah ini kamu akan mengakses Mading Kelompok 1 PHB XIPS3 '+ nama);
+  alert('Selepas ini ka hendak tingok Mading "Istimewanya Negeri Laskar Pelangi🌈" '+ " " + nama);
   alert('Penasaran kan ' +nama + "?🤔" );
-
-  alert('Terimakasih udah mau mampir ke website kami '+ nama + "😄");
-  lagi = confirm('Mau baca informasinya lagi?');
+  alert('Dan semoga selepas membaca web ini, wawasan ka semakin bertambah😎');
+  
+  lagi = confirm('Kawa mace informasinya agik?');
 
 }
-alert('Enjoy this web ' + nama +"😉");
-alert('Dan semoga setelah membaca web ini, wawasanmu semakin bertambah😎');
 
-    
+
+     localStorage.setItem('alerted','b');
+    }
+
+
     
