@@ -13,7 +13,11 @@
 
 </div>
 	<div class="serviam">
-		<img src="IMG/100tahun.png" alt="serviam-logo" width="175px" height="175px">
+		<img src="IMG/100tahun.png" alt="serviam-logo" width="130px" height="130px">
+	</div>
+
+	<div class="serviam-1">
+		<img src="IMG/serviam.png" alt="serviam-logo" width="115px" height="115px">
 	</div>
 
 	<div class="kelompok">
@@ -198,10 +202,179 @@ Biar menjadi generasi cerdas <br>
 		
 <div class="footer"> <p>Copyright &copy; 2022-2023 KELOMPOK 1 XIPS3</p> </div>
 
+<!-- UJIAN -->
+
+
+		<a href="#kijang-2" class="quis">
+			<img src="IMG/QUIZ.png" alt="TES KEMAMPUAN KA DI SINI" width="120px" height="120px" id="kuis">
+		</a>
+	
+		<div class="overlay" id="kijang-2">
+			<a href="#" class="close">X</a>
+			<div class="nah"></div>
+
+				<div class="ujian">
+	<h2>PEPERIKSAAN DADAKAN 📝</h2><br>
+	<p>Selepas ka tingkok mading kite, cubalah test kebolehan ka <br>
+nek kek ka sentiasa ❤️</p> <br> <br>
+
+<!-- SOAL 1 -->
+	<h3>1. Mengapa Bangka Belitung sering disebut sebagai Negeri Laskar Pelangi?</h3><br>
+	<label class="container">
+  <input type="radio"  name="radio-1">a. Karena keragamannya yang bermacam-macam<br>
+  <span class="checkmark"></span>
+</label>
+<label class="container">
+  <input type="radio" name="radio-1">b. Karena sering ada penampakan pelangi <br>
+  <span class="checkmark"></span>
+</label>
+<label class="container">
+  <input type="radio" name="radio-1" id="benar1">c. Karena Bangka merupakan setting tempat "Laskar Pelangi"<br>
+  <span class="checkmark"></span>
+</label>
+<label class="container">
+  <input type="radio" name="radio-1">d. Karena Bangka Belitung identik dengan warna pelangi<br><br>
+  <span class="checkmark"></span>
+</label>
+
+<!-- SOAL 2 -->
+<h3>2. Tradisi apa yang ada pada Tari campak asal Belitung?</h3><br>
+	<label class="container">
+  <input type="radio"  name="radio-2">a. Menari diiringi musik daerah<br>
+  <span class="checkmark"></span>
+</label>
+<label class="container">
+  <input type="radio" name="radio-2">b. Menari sambil bersaut-sautan<br>
+  <span class="checkmark"></span>
+</label>
+<label class="container">
+  <input type="radio" name="radio-2"id="benar2">c. Menari sambil berbalas pantun<br>
+  <span class="checkmark"></span>
+</label>
+<label class="container">
+  <input type="radio" name="radio-2">d. Menari secara berpasangan<br><br>
+  <span class="checkmark"></span>
+</label>
+
+<!-- SOAL 3 -->
+<h3>3. Berikut sarana yang digunakan dalam permainan adu kerito surong, <b>kecuali...</b></h3><br>
+	<label class="container">
+  <input type="radio"  name="radio-3"id="benar3">a. Bidak Kayu<br>
+  <span class="checkmark"></span>
+</label>
+<label class="container">
+  <input type="radio" name="radio-3">b. Suyak<br>
+  <span class="checkmark"></span>
+</label>
+<label class="container">
+  <input type="radio" name="radio-3">c. Kerito surong<br>
+  <span class="checkmark"></span>
+</label>
+<label class="container">
+  <input type="radio" name="radio-3">d. Gerunggang<br><br>
+  <span class="checkmark"></span>
+</label>
+	
+	<!-- SOAL 4 -->
+<h3>4. Apa yang membuat Rusip memiliki cita rasa beragam?</h3><br>
+	<label class="container">
+  <input type="radio"  name="radio-4">a. Ikan tengiri, Jeruk, gula aren<br>
+  <span class="checkmark"></span>
+</label>
+<label class="container">
+  <input type="radio" name="radio-4"id="benar4">b. Garam, gula aren, cabe<br>
+  <span class="checkmark"></span>
+</label>
+<label class="container">
+  <input type="radio" name="radio-4">c. Garam, jeruk, gula pasir<br>
+  <span class="checkmark"></span>
+</label>
+<label class="container">
+  <input type="radio" name="radio-4">d. Air kerak nasi, ikan bilis, cabe<br><br>
+  <span class="checkmark"></span>
+</label>
+
+<!-- SOAL 5 -->
+<h3>5. Apa quote yang disampaikan Andrea hirata dalam rubrik Eksplore Belitung?</h3><br>
+	<label class="container">
+  <input type="radio"  name="radio-5">a. "Tuhan tahu tapi menunggu"<br>
+  <span class="checkmark"></span>
+</label>
+<label class="container">
+  <input type="radio" name="radio-5"id="benar5">b. "Bermimpilah karena Tuhan akan memeluk mimpi-mimpi itu"<br>
+  <span class="checkmark"></span>
+</label>
+<label class="container">
+  <input type="radio" name="radio-5">c. "Kemiskinan sulit diberantas karena pelakunya senang menjadi miskin"<br>
+  <span class="checkmark"></span>
+</label>
+<label class="container">
+  <input type="radio" name="radio-5">d. "Setiap orang mempunyai jalan yang berbeda untuk memahami sesuatu."<br><br>
+  <span class="checkmark"></span>
+</label>
+	
+
+	
+
+
+
+	
+
+
+
+
+
+
+	<button type="submit" name="submit" value="submitQuiz" onclick="result()">Submit</button>
+	<script type="text/javascript">
+		
+		function result() {
+			// body...
+			var score =0;
+			if (document.getElementById('benar1').checked) 
+			{
+				score++;
+			}
+
+			if (document.getElementById('benar2').checked) 
+			{
+				score++;
+			}
+
+			if (document.getElementById('benar3').checked) 
+			{
+				score++;
+			}
+
+			if (document.getElementById('benar4').checked) 
+			{
+				score++;
+			}
+
+			if (document.getElementById('benar5').checked) 
+			{
+				score++;
+			}alert("Nilai ka adalah :"+" " +score);
+
+			if (score<2) {
+				alert("Maaf, coba ka tingok mading kite lagi 😞");
+
+			}else if(score>=3){
+				alert("Ka yang bikin mading ke? 🤔");
+			}
+
+
+
+			
+
+		}
+	</script>
+</div>	
+		</div>
+
 
 	
 <script src="peringatan.js"></script>
-
 
 </body>
 </html>
