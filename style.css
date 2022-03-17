@@ -1030,6 +1030,7 @@ button{
 	transition: ease-out .3s;
 }
 button:hover{
+	cursor: pointer;
 	box-shadow: inset 65px 0 0 0 #15C286 ;
 	transform: scale(1.2) rotate(-5deg);
 }
