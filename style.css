@@ -3,20 +3,11 @@
 	padding: 0;
 }
 body{
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation-name: gradient, yaelah;
-	animation-duration: 15s, 1s;
-	animation-iteration-count: infinite, forwards;
-	animation-direction: ease, alternate;
-
 	
+	animation: yaelah 1s  forwards;
 	height: 100vh;
-
-
-
-
-	 -webkit-user-select: none;
+	-webkit-user-select: none;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	 
 
 
@@ -26,6 +17,19 @@ body{
 body::-webkit-scrollbar-thumb:hover{
 	background: linear-gradient(#EC0F47,
                     #EE6B3B, #FBBF54, #15C286,#0F49B4,#8A2BE2,#6F00FF); 
+}
+
+.bg{
+		position: fixed;
+
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+		background-size: 400% 400%;
+		height: 	1410px;
+		animation: gradient 15s ease infinite alternate;
 }
 
 ::-webkit-scrollbar {
