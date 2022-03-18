@@ -4,7 +4,7 @@
 }
 body{
 	
-	animation: yaelah 1s  forwards;
+	animation: yaelah .8s 1500ms  forwards;
 	height: 100vh;
 	-webkit-user-select: none;
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
